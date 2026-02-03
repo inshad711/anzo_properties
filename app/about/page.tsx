@@ -1,3 +1,9 @@
+import WhyChoose from "@/components/WhyChoose";
+
 export default function AboutPage() {
-  return <div>About</div>;
+  return (
+    <div>
+      <WhyChoose />
+    </div>
+  );
 }

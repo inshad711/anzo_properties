@@ -97,13 +97,14 @@
 
 // export default HeroSection;
 
+////// hero new
 "use client";
 
 import React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative w-full h-screen flex items-end justify-center overflow-hidden bg-gray-900">
+    <section className="relative w-full h-[90vh] md:h-screen flex items-end justify-center overflow-hidden bg-gray-900">
       <video
         autoPlay
         loop
@@ -120,21 +121,17 @@ const HeroSection: React.FC = () => {
 
       {/* Main Content */}
       <div className="container mx-auto px-6 relative z-20 text-center pb-8">
-        <h1 className="text-3xl uppercase font-elegant md:text-5xl font-medium text-white tracking-tight mb-6">
-          Your Gateway to Dubai’s <br />
+        <h1 className="text-3xl uppercase font-[var(--font-libertinus)] md:text-5xl font-medium text-white tracking-tight mb-6">
+          Your Gateway to Dubai’s <br className="md:block hidden" />
           <span className="text-[#d6b56a]">World-Class Living.</span>
         </h1>
 
-        {/* <p className="text-lg md:text-xl font-ui font-light text-gray-200 max-w-3xl mx-auto mb-10 leading-tight">
-          Defining a new era of real estate investment in the world’s most
-          visionary city.
-        </p> */}
-
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="px-8 py-2 cursor-pointer bg-[#d6b56a] text-black font-medium rounded-sm shadow-lg transition-all">
+          <button className="px-8 py-2 cursor-pointer bg-transparent text-white font-medium rounded-sm shadow-lg border border-[#d6b56a] transition-all">
             Book a Consultation
           </button>
-          <button className="px-8 py-2 cursor-pointer bg-white text-black font-medium rounded-sm backdrop-blur-sm border border-white/20 transition-all transform">
+
+          <button className="px-8 py-2 cursor-pointer bg-transparent text-white font-medium rounded-sm shadow-lg border border-white transition-all">
             Explore Properties
           </button>
         </div>
