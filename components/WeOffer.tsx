@@ -503,6 +503,7 @@
 import React from "react";
 import { Diamond, Handshake, Layout } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function WeOffer() {
   const services = [
@@ -600,9 +601,14 @@ export default function WeOffer() {
                   {service.description}
                 </p>
               </div>
-              <button className="mt-10 w-fit px-8 py-3 border border-[#c5a36b]/40 rounded-full text-[11px] uppercase tracking-widest font-semibold text-[#c5a36b] hover:bg-[#c5a36b] hover:text-black transition-all duration-500">
+              {/* <button className="mt-10 w-fit px-8 cursor-pointer py-3 border border-[#c5a36b]/40 rounded-full text-[11px] uppercase tracking-widest font-semibold text-[#c5a36b] hover:bg-[#c5a36b] hover:text-black transition-all duration-500">
                 Explore More
-              </button>
+              </button> */}
+              <Link href="/contact">
+                <button className="mt-10 w-fit px-8 cursor-pointer py-3 border border-[#c5a36b]/40 rounded-full text-[11px] uppercase tracking-widest font-semibold text-[#c5a36b] hover:bg-[#c5a36b] hover:text-black transition-all duration-500">
+                  Explore More
+                </button>
+              </Link>
             </motion.div>
           ))}
         </div>

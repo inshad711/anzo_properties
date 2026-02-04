@@ -769,6 +769,7 @@
 "use client";
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import Link from "next/link";
 
 // 1. Define the type for your content objects
 interface ContentSection {
@@ -813,9 +814,15 @@ const content: ContentSection[] = [
 
 export default function CTA() {
   return (
-    <main className="bg-black text-white py-12">
+    <main className="bg-zinc-950 text-white pt-12 pb-8 md:pt-20 md:pb-12">
       <div className="mx-auto max-w-[1100px] px-5">
         <div className="flex flex-col items-center text-center">
+          <div className="flex flex-col items-center gap-4">
+            <div className="h-[1px] w-12 bg-[#c5a36b]/80" />
+            <span className="text-[11px] uppercase tracking-[0.5em] font-medium text-[#c5a36b]">
+              About Us
+            </span>
+          </div>
           {content.map((item, index) => (
             <div key={index} className={`w-full ${item.spacing || ""}`}>
               <p
@@ -835,10 +842,12 @@ export default function CTA() {
               </p>
             </div>
           ))}
-
-          <button className="mt-12 px-10 py-4 border border-[#c5a36b]/40 rounded-full text-[13px] uppercase tracking-widest font-semibold text-[#c5a36b] hover:bg-[#c5a36b] hover:text-black transition-all duration-500">
-            About Us
-          </button>
+          <Link href="/about">
+            {" "}
+            <button className="mt-12 cursor-pointer px-10 py-4 border border-[#c5a36b]/40 rounded-full text-[13px] uppercase tracking-widest font-semibold text-[#c5a36b] hover:bg-[#c5a36b] hover:text-black transition-all duration-500">
+              About Us
+            </button>
+          </Link>
         </div>
       </div>
     </main>

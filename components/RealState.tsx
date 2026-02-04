@@ -292,7 +292,7 @@ const DEVELOPERS_DATA = [
     description:
       "Emaar, a real estate giant founded in 1997, is renowned for Burj Khalifa and Dubai Mall. Emaar offers different properties built to the highest standards. Their mission is to shape the future for everyone.",
     projectsCount: 209,
-    logo: "https://new-projects-media.propertyfinder.com/developer/79ca4333-9975-4672-b05f-bb7329de75e9/logo/image/SXDm9h3dbO4shNsEGYyX31DwTU98MpFSxR1sEuT7LsE=/original.png",
+    logo: "/brand/1.webp",
   },
   {
     id: "2",
@@ -301,7 +301,7 @@ const DEVELOPERS_DATA = [
     description:
       "Azizi Developments, a giant Dubai-based developer offering projects such as Azizi Riviera and more, provides modern houses and a wide range of budgets. Azizi stands as a choice for property seekers in the UAE.",
     projectsCount: 110,
-    logo: "https://new-projects-media.propertyfinder.com/developer/90728d48-7a7d-4d3a-ba4a-145890eae6c1/logo/image/dRxSykZ1jpsPTL2pud5WlGzCiHxu1ruhz51uHFm4pDM=/original.png",
+    logo: "/brand/2.webp",
   },
   {
     id: "3",
@@ -310,7 +310,7 @@ const DEVELOPERS_DATA = [
     description:
       "Aldar Properties is Abu Dhabi's premier developer founded in 2004, shaping world-class communities with a wide range of properties to choose from. Famous for creating luxurious living experiences.",
     projectsCount: 93,
-    logo: "https://new-projects-media.propertyfinder.com/developer/d0853b8e-c92f-4b7e-a4e2-a5b67955ba7d/logo/image/k1MoKKBF5CIZjwQ0XbOWkxs3heXc0pV6lcQMvgLaKws=/original.png",
+    logo: "/brand/3.webp",
   },
   {
     id: "4",
@@ -319,7 +319,7 @@ const DEVELOPERS_DATA = [
     description:
       "Founded in 2002, DAMAC has shaped the Middle East by providing luxurious projects in desirable locations. Offering a varied portfolio that includes skyscrapers, communities, and branded apartments for everyone.",
     projectsCount: 77,
-    logo: "https://new-projects-media.propertyfinder.com/developer/1063a07c-d94f-496b-9a24-5ea7409fe3d1/logo/image/O3p2VHWzQX9-Duzqi1vbOjp2tSlHIwJ1sjRjvTA7h68=/original.png",
+    logo: "/brand/4.webp",
   },
   {
     id: "5",
@@ -328,7 +328,7 @@ const DEVELOPERS_DATA = [
     description:
       "Sobha Realty is a leading global developer since 1976 known for designing royal facilities, mosques, and signature projects. Created master communities such as Sobha Hartland, offering diverse building styles and properties.",
     projectsCount: 71,
-    logo: "https://new-projects-media.propertyfinder.com/developer/8a509d77-0b04-4669-9a78-d9fd5cdc78da/logo/image/L_UdmunePjPgB1sOpqj1TlbZ1NTOchKK8RtZ4QaqWa8=/original.png",
+    logo: "/brand/5.webp",
   },
   {
     id: "6",
@@ -337,7 +337,7 @@ const DEVELOPERS_DATA = [
     description:
       "Founded in 2014, Ellington, with their joined experience, crafted lifestyles in luxury villas and apartments such as Belgravia and more. Accomplished by exceptional artistic talent and architectural design.",
     projectsCount: 65,
-    logo: "https://new-projects-media.propertyfinder.com/developer/a3178484-ee0c-466d-9fe3-92b231607234/logo/image/lOHO4BsD8PHWqSJqPEhmlwI9IVDDUB_SqSqssrZM_mE=/original.png",
+    logo: "/brand/6.webp",
   },
   {
     id: "7",
@@ -346,7 +346,7 @@ const DEVELOPERS_DATA = [
     description:
       "One of Dubai's leading developers, Binghatti, created opulent projects by offering a variety of residences that redefine luxury living. Partnered with global brands, including Mercedes-Benz, Bugatti, and Jacob & Co.",
     projectsCount: 62,
-    logo: "https://new-projects-media.propertyfinder.com/developer/db16d589-88c5-4428-899b-db54b1d7ef7a/logo/image/R9cUN2yisO8tn7iOykZ1i_JjpbtuMvZjLYbLY7sV8fE=/original.png",
+    logo: "/brand/7.webp",
   },
   {
     id: "8",
@@ -355,7 +355,7 @@ const DEVELOPERS_DATA = [
     description:
       "Meraas was established in 2007. Famous for the Bluewaters Island and City Walk. Aims to establish Dubai as the preferred global location for real estate investment and offer a variety of home options to suit all lifestyles.",
     projectsCount: 61,
-    logo: "https://new-projects-media.propertyfinder.com/developer/831c8b0f-8adb-4fa5-94e9-0b123aa91a1a/logo/image/Khm513Li-0EP7_xCCxbyA3QlHudwwiTkvOG5Rz5KI1Y=/original.png",
+    logo: "/brand/8.webp",
   },
   {
     id: "9",
@@ -364,7 +364,7 @@ const DEVELOPERS_DATA = [
     description:
       "Arada is a prominent UAE developer, best known for Aljada, which was founded in 2017 by well-known Gulf businesspeople. Arada offers contemporary properties in well-planned communities with flexible payment plans.",
     projectsCount: 47,
-    logo: "https://new-projects-media.propertyfinder.com/developer/3699a21c-ddd9-4702-8adf-5348fdf5d2da/logo/image/OHWeY2FYNHVt6KK5gmREYBlufhBx7QnXqw84qwHcJ4U=/original.png",
+    logo: "/brand/9.webp",
   },
   {
     id: "10",
@@ -373,7 +373,7 @@ const DEVELOPERS_DATA = [
     description:
       "One of the top real estate companies in Dubai, Imtiaz Developments has created numerous residential properties. They innovate by anticipating market trends and offering expertise across various real estate sectors.",
     projectsCount: 38,
-    logo: "https://new-projects-media.propertyfinder.com/developer/3fadc15f-708b-4d93-90bc-4aa9086d16f2/logo/image/LYPK0EVx4_03jTZaAXVs0uzJmaEcb8ZHyQCtXsh-VwQ=/original.png",
+    logo: "/brand/10.webp",
   },
 ];
 
@@ -411,7 +411,7 @@ const DeveloperCard = ({ developer }: { developer: Developer }) => {
     >
       <div className="flex flex-col md:flex-row gap-4 md:gap-6">
         <div className="flex flex-row md:flex-col items-center md:items-start gap-4">
-          <div className="w-20 h-20 md:w-40 md:h-40 flex-shrink-0 border border-gray-200 md:border-gray-800 rounded-lg md:rounded-xl flex items-center justify-center p-2 md:p-4 bg-white md:bg-zinc-900 shadow-sm">
+          <div className="w-24 h-24 md:w-40 md:h-40 flex-shrink-0 border border-gray-200 md:border-white rounded-lg md:rounded-xl flex items-center justify-center  md:p-4 bg-zinc-900 shadow-sm">
             <img
               src={developer.logo}
               alt={developer.name}
@@ -445,7 +445,7 @@ const DeveloperCard = ({ developer }: { developer: Developer }) => {
         </div>
 
         <div className="mt-2 md:mt-0 flex items-center">
-          <button className="w-full md:w-auto px-6 py-3 md:py-2.5 rounded-lg text-indigo-900 md:text-white bg-indigo-50/50 md:bg-zinc-800 hover:bg-indigo-100 md:hover:bg-zinc-700 font-medium text-sm transition-all whitespace-nowrap">
+          <button className="w-full md:w-auto px-6 py-3 md:py-2.5 rounded-lg text-white bg-zinc-800  font-medium text-sm transition-all whitespace-nowrap">
             {developer.projectsCount} projects
           </button>
         </div>
@@ -464,7 +464,7 @@ export default function RealEstate() {
   }, [searchQuery]);
 
   return (
-    <div className="bg-zinc-950 text-white pt-32 min-h-screen">
+    <div className="bg-zinc-950 text-white py-20 md:py-32 ">
       <div className="max-w-6xl mx-auto px-4 pt-6">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
           <h1 className="text-3xl md:text-4xl font-normal max-w-xl mx-auto tracking-tight text-white text-center">

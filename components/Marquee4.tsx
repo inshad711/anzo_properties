@@ -116,7 +116,7 @@ export default function Marquee4() {
   const displayItems = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS, ...MARQUEE_ITEMS];
 
   return (
-    <div className="w-full bg-zinc-950 pb-8 md:pb-0 overflow-hidden">
+    <div className="w-full bg-zinc-950 py-8 md:pb-0 overflow-hidden">
       <div className="relative flex">
         {/* Added "marquee-container" class for hover control */}
         <div

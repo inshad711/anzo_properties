@@ -161,6 +161,7 @@ import {
   ArrowRight,
   PhoneCall,
 } from "lucide-react";
+import Link from "next/link";
 
 const AboutSection: React.FC = (): ReactElement => {
   const handleImageError = (
@@ -270,14 +271,22 @@ const AboutSection: React.FC = (): ReactElement => {
 
             {/* Bottom Footer: CTA & Contact */}
             <div className="pt-6 flex flex-wrap items-center gap-8 border-t border-white/10">
-              <button className="group relative flex items-center bg-[#8a6531] hover:bg-[#8a6531] text-black px-8 py-4 rounded-full font-bold transition-all duration-300">
+              {/* <button className="group relative flex items-center bg-[#8a6531] hover:bg-[#8a6531] text-black px-8 py-4 rounded-full font-bold transition-all duration-300">
                 <div className="absolute left-2 w-10 h-10 bg-black rounded-full flex items-center justify-center transition-transform">
                   <ArrowRight className="w-5 h-5 text-[#8a6531]" />
                 </div>
                 <span className="ml-8">Read More</span>
-              </button>
+              </button> */}
+              <Link href="/contact" className="inline-block">
+                <button className="group relative cursor-pointer flex items-center bg-[#8a6531] hover:bg-[#8a6531] text-black px-8 py-4 rounded-full font-bold transition-all duration-300">
+                  <div className="absolute left-2 w-10 h-10 bg-black rounded-full flex items-center justify-center transition-transform group-hover:translate-x-1">
+                    <ArrowRight className="w-5 h-5 text-[#8a6531]" />
+                  </div>
+                  <span className="ml-8">Read More</span>
+                </button>
+              </Link>
 
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center border border-white/5">
                   <PhoneCall className="w-5 h-5 text-[#8a6531]" />
                 </div>
@@ -289,7 +298,24 @@ const AboutSection: React.FC = (): ReactElement => {
                     +9876543211
                   </p>
                 </div>
-              </div>
+              </div> */}
+              <a
+                href="tel:+971 551172789"
+                className="flex items-center gap-4 group"
+              >
+                <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center border border-white/5 group-hover:bg-white/20 transition">
+                  <PhoneCall className="w-5 h-5 text-[#8a6531]" />
+                </div>
+
+                <div>
+                  <p className="text-gray-500 text-xs font-medium uppercase tracking-tight">
+                    Call Anytime
+                  </p>
+                  <p className="text-white font-bold text-lg leading-none group-hover:underline">
+                    +971 551172789
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
         </div>

@@ -101,6 +101,7 @@
 
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 const HeroSection: React.FC = () => {
@@ -128,13 +129,23 @@ const HeroSection: React.FC = () => {
         </h1>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="px-8 py-2 cursor-pointer bg-transparent text-white font-medium rounded-sm shadow-lg border border-[#d6b56a] transition-all">
+          {/* <button className="px-8 py-2 cursor-pointer bg-transparent text-white font-medium rounded-sm shadow-lg border border-[#d6b56a] transition-all">
             Book a Consultation
-          </button>
+          </button> */}
 
+          <Link href="/contact">
+            <button className="px-10 py-4 cursor-pointer border border-[#c5a36b]/90 rounded-full text-[13px] uppercase tracking-widest font-semibold text-[#ffffff] hover:bg-[#c5a36b] hover:text-black transition-all duration-500">
+              Book a Consultation
+            </button>
+          </Link>
+
+          {/* 
           <button className="px-8 py-2 cursor-pointer bg-transparent text-white font-medium rounded-sm shadow-lg border border-white transition-all">
             Explore Properties
-          </button>
+          </button> */}
+          {/* <button className=" px-10 py-4 border border-[#ffffff]/90 rounded-full text-[13px] uppercase tracking-widest font-semibold text-[#ffffff] hover:bg-[#c5a36b] hover:text-black transition-all duration-500">
+            Explore Properties
+          </button> */}
         </div>
       </div>
 

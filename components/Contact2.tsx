@@ -241,8 +241,202 @@
 //   );
 // }
 
-// /// use my code and make same as image layout,contact section , using nextjs tsx and tailwindcss, and in image there is not dropdown in
+// /// new contact page
 
+// "use client";
+// import React, { useState, ChangeEvent, FormEvent } from "react";
+// import { MapPin, Mail, Phone, Star } from "lucide-react";
+
+// interface FormData {
+//   firstName: string;
+//   email: string;
+//   phone: string;
+//   needs: string; // Keep as string, it works for both select and input
+//   message: string;
+// }
+
+// const ContactSection: React.FC = () => {
+//   const [formData, setFormData] = useState<FormData>({
+//     firstName: "",
+//     email: "",
+//     phone: "",
+//     needs: "",
+//     message: "",
+//   });
+
+//   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+//     e.preventDefault();
+//     console.log("Form submitted:", formData);
+//   };
+
+//   const handleChange = (
+//     e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>,
+//   ) => {
+//     const { name, value } = e.target;
+//     setFormData((prev) => ({ ...prev, [name]: value }));
+//   };
+
+//   return (
+//     <section className=" bg-zinc-950 py-16 px-4 md:px-8 lg:px-16">
+//       <div className="max-w-7xl mx-auto pt-20 flex flex-col lg:flex-row gap-12 items-stretch">
+//         {/* Left Side: Content & Image */}
+//         <div className="w-full lg:w-1/2 flex flex-col space-y-8">
+//           <div className="space-y-4">
+//             <div className="flex items-center gap-2 text-zinc-400 uppercase tracking-widest text-sm font-semibold">
+//               <Star size={16} fill="currentColor" className="text-[#c5a67c]" />
+//               <span>Contact Us</span>
+//             </div>
+
+//             <h1 className="text-4xl md:text-5xl font-medium text-white leading-tight">
+//               Complete this form to <br className="md:block hidden" /> contact
+//               our team
+//             </h1>
+
+//             <p className="text-zinc-400 text-lg max-w-md leading-relaxed">
+//               Discover inspiring stories, design trends, and innovations shaping
+//               modern architecture.
+//             </p>
+//           </div>
+
+//           <div className="relative flex-1  rounded-[2rem] overflow-hidden shadow-2xl group border border-zinc-800 min-h-[350px]">
+//             <img
+//               src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=800"
+//               alt="Modern Architecture"
+//               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80"
+//             />
+
+//             <div className="absolute bottom-6 left-6 space-y-3 right-6 md:right-auto">
+//               <div className="bg-black/60 backdrop-blur-md text-white p-4 rounded-2xl flex items-center gap-4 border border-white/10 transition-all hover:bg-black/80">
+//                 <div className="bg-[#EFFF00]/20 p-2 rounded-full text-[#c5a67c]">
+//                   <MapPin size={24} />
+//                 </div>
+//                 <div className="text-sm">
+//                   <p>1901 Thornridge Cir. Shiloh,</p>
+//                   <p className="text-zinc-300">Hawaii 81063</p>
+//                 </div>
+//               </div>
+
+//               <div className="bg-black/60 backdrop-blur-md text-white p-4 rounded-2xl flex items-center gap-4 border border-white/10 transition-all hover:bg-black/80">
+//                 <div className="bg-[#EFFF00]/20 p-2 rounded-full text-[#c5a67c]">
+//                   <Mail size={24} />
+//                 </div>
+//                 <div className="text-sm">
+//                   <p className="font-medium">demo@example.com</p>
+//                   <p className="text-zinc-300">+629 555-0129</p>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Right Side: Form Card */}
+//         <div className="w-full lg:w-1/2">
+//           <div className="h-full bg-zinc-900 rounded-[2rem] md:rounded-[2.5rem] shadow-2xl p-6 md:p-12 border border-zinc-800">
+//             <form
+//               onSubmit={handleSubmit}
+//               className="flex flex-col h-full space-y-6"
+//             >
+//               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+//                 <div className="space-y-2">
+//                   <label className="block text-sm font-semibold text-zinc-300">
+//                     First Name <span className="text-red-500">*</span>
+//                   </label>
+//                   <input
+//                     type="text"
+//                     name="firstName"
+//                     required
+//                     placeholder="Your full name"
+//                     value={formData.firstName}
+//                     onChange={handleChange}
+//                     className="w-full px-5 py-4 rounded-xl bg-zinc-800 border border-zinc-700 text-white focus:outline-none focus:ring-2 focus:ring-[#c5a67c] focus:border-transparent transition-all placeholder:text-zinc-500"
+//                   />
+//                 </div>
+
+//                 <div className="space-y-2">
+//                   <label className="block text-sm font-semibold text-zinc-300">
+//                     Email Address <span className="text-red-500">*</span>
+//                   </label>
+//                   <input
+//                     type="email"
+//                     name="email"
+//                     required
+//                     placeholder="Your email Address"
+//                     value={formData.email}
+//                     onChange={handleChange}
+//                     className="w-full px-5 py-4 rounded-xl bg-zinc-800 border border-zinc-700 text-white focus:outline-none focus:ring-2 focus:ring-[#c5a67c] focus:border-transparent transition-all placeholder:text-zinc-500"
+//                   />
+//                 </div>
+
+//                 <div className="space-y-2">
+//                   <label className="block text-sm font-semibold text-zinc-300">
+//                     Phone Number <span className="text-red-500">*</span>
+//                   </label>
+//                   <input
+//                     type="tel"
+//                     name="phone"
+//                     required
+//                     placeholder="Your number"
+//                     value={formData.phone}
+//                     onChange={handleChange}
+//                     className="w-full px-5 py-4 rounded-xl bg-zinc-800 border border-zinc-700 text-white focus:outline-none focus:ring-2 focus:ring-[#c5a67c] focus:border-transparent transition-all placeholder:text-zinc-500"
+//                   />
+//                 </div>
+
+//                 {/* UPDATED: Needs Text Input instead of Select */}
+//                 <div className="space-y-2">
+//                   <label className="block text-sm font-semibold text-zinc-300">
+//                     What are your needs? <span className="text-red-500">*</span>
+//                   </label>
+//                   <input
+//                     type="text"
+//                     name="needs"
+//                     required
+//                     placeholder="e.g. Interior Design"
+//                     value={formData.needs}
+//                     onChange={handleChange}
+//                     className="w-full px-5 py-4 rounded-xl bg-zinc-800 border border-zinc-700 text-white focus:outline-none focus:ring-2 focus:ring-[#c5a67c] focus:border-transparent transition-all placeholder:text-zinc-500"
+//                   />
+//                 </div>
+//               </div>
+
+//               <div className="space-y-2 flex-1 flex flex-col">
+//                 <label className="block text-sm font-semibold text-zinc-300">
+//                   Write Message
+//                 </label>
+//                 <textarea
+//                   name="message"
+//                   placeholder="Your message here..."
+//                   value={formData.message}
+//                   onChange={handleChange}
+//                   className="w-full flex-1 px-5 py-4 rounded-xl bg-zinc-800 border border-zinc-700 text-white focus:outline-none focus:ring-2 focus:ring-[#c5a67c] focus:border-transparent transition-all placeholder:text-zinc-500 resize-none min-h-[150px]"
+//                 />
+//               </div>
+
+//               <button
+//                 type="submit"
+//                 className="w-full md:w-auto px-10 py-4 bg-[#c5a67c] hover:bg-white text-black font-bold rounded-xl transition-all active:scale-95 shadow-lg shadow-[#EFFF00]/10 uppercase tracking-wider text-sm"
+//               >
+//                 Send Your Request
+//               </button>
+//             </form>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default function Contact2() {
+//   return (
+//     <div className="bg-zinc-950">
+//       <ContactSection />
+//     </div>
+//   );
+// }
+
+/////new dynamic
+
+// E:\Anzo_web\anzo_properties\components\Contact2.tsx
 "use client";
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { MapPin, Mail, Phone, Star } from "lucide-react";
@@ -251,11 +445,12 @@ interface FormData {
   firstName: string;
   email: string;
   phone: string;
-  needs: string; // Keep as string, it works for both select and input
+  needs: string;
   message: string;
 }
 
 const ContactSection: React.FC = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     email: "",
@@ -264,9 +459,34 @@ const ContactSection: React.FC = () => {
     message: "",
   });
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        setFormData({
+          firstName: "",
+          email: "",
+          phone: "",
+          needs: "",
+          message: "",
+        });
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      alert("An error occurred. Please check your connection.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -277,8 +497,8 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section className=" bg-zinc-950 py-16 px-4 md:px-8 lg:px-16">
-      <div className="max-w-7xl mx-auto pt-20 flex flex-col lg:flex-row gap-12 items-stretch">
+    <section className=" bg-zinc-950  px-4 md:px-8 lg:px-16">
+      <div className="max-w-7xl mx-auto  flex flex-col lg:flex-row gap-12 items-stretch">
         {/* Left Side: Content & Image */}
         <div className="w-full lg:w-1/2 flex flex-col space-y-8">
           <div className="space-y-4">
@@ -298,7 +518,7 @@ const ContactSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="relative flex-1  rounded-[2rem] overflow-hidden shadow-2xl group border border-zinc-800 min-h-[350px]">
+          <div className="relative flex-1 rounded-[2rem] overflow-hidden shadow-2xl group border border-zinc-800 min-h-[350px]">
             <img
               src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=800"
               alt="Modern Architecture"
@@ -320,9 +540,24 @@ const ContactSection: React.FC = () => {
                 <div className="bg-[#EFFF00]/20 p-2 rounded-full text-[#c5a67c]">
                   <Mail size={24} />
                 </div>
+                {/* <div className="text-sm">
+                  <p className="font-medium">info@anzoproperties.com</p>
+                  <p className="text-zinc-300">+971-55-1172789</p>
+                </div> */}
                 <div className="text-sm">
-                  <p className="font-medium">demo@example.com</p>
-                  <p className="text-zinc-300">+629 555-0129</p>
+                  <a
+                    href="mailto:info@anzoproperties.com"
+                    className="block font-medium hover:underline"
+                  >
+                    info@anzoproperties.com
+                  </a>
+
+                  <a
+                    href="tel:+971551172789"
+                    className="block text-zinc-300 hover:underline"
+                  >
+                    +971-55-1172789
+                  </a>
                 </div>
               </div>
             </div>
@@ -382,7 +617,6 @@ const ContactSection: React.FC = () => {
                   />
                 </div>
 
-                {/* UPDATED: Needs Text Input instead of Select */}
                 <div className="space-y-2">
                   <label className="block text-sm font-semibold text-zinc-300">
                     What are your needs? <span className="text-red-500">*</span>
@@ -414,9 +648,10 @@ const ContactSection: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full md:w-auto px-10 py-4 bg-[#c5a67c] hover:bg-white text-black font-bold rounded-xl transition-all active:scale-95 shadow-lg shadow-[#EFFF00]/10 uppercase tracking-wider text-sm"
+                disabled={isSubmitting}
+                className="w-full md:w-auto px-10 py-4 bg-[#c5a67c] hover:bg-white text-black font-bold rounded-xl transition-all active:scale-95 shadow-lg shadow-[#EFFF00]/10 uppercase tracking-wider text-sm disabled:opacity-70 disabled:cursor-not-allowed"
               >
-                Send Your Request
+                {isSubmitting ? "Sending..." : "Send Your Request"}
               </button>
             </form>
           </div>

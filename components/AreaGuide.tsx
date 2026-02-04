@@ -1094,8 +1094,8 @@ export default function AreaGuide() {
   const [isAnimating, setIsAnimating] = useState(false);
 
   return (
-    <section className="bg-zinc-950 pb-8 md:pb-12 px-4 md:px-10">
-      <div className="max-w-[1400px] mx-auto">
+    <section className="bg-zinc-950 pb-8 md:pb-12">
+      <div className="templateContainer">
         {/* Header */}
         <div className=" md:max-w-2xl mx-auto mb-10 px-4">
           {/* <h2
@@ -1105,6 +1105,12 @@ export default function AreaGuide() {
                 : "opacity-100 translate-y-0"
             }`}
           > */}
+          <div className="flex flex-col items-center gap-4">
+            <div className="h-[1px] w-12 bg-[#c5a36b]/80" />
+            <span className="text-[11px] uppercase tracking-[0.5em] font-medium text-[#c5a36b]">
+              Prime Destinations
+            </span>
+          </div>
           <h2
             className={`text-white mb-2 font-[var(--font-libertinus)] text-center leading-snug text-[32px] md:text-[40px] font-medium transition-all duration-500 ${
               isAnimating

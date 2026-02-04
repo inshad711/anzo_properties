@@ -271,6 +271,7 @@
 // export default Header;
 
 //// mobile
+
 "use client";
 
 import Link from "next/link";
@@ -297,6 +298,21 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      // Prevent scrolling
+      document.body.style.overflow = "hidden";
+    } else {
+      // Re-enable scrolling
+      document.body.style.overflow = "unset";
+    }
+
+    // Cleanup function to ensure scroll is restored if component unmounts
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isOpen]);
 
   return (
     <>
@@ -402,7 +418,7 @@ const Header = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsOpen(false)}
-              className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[40] md:hidden"
+              className="fixed inset-0 bg-zinc-900/5 backdrop-blur-sm z-[40] md:hidden"
             />
 
             {/* 2. The Slide-in Menu (75% width for better design) */}
@@ -411,7 +427,7 @@ const Header = () => {
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
               transition={{ type: "tween", duration: 0.3 }}
-              className="fixed top-0 left-0 w-[75%] h-full bg-[#111111] z-[45] md:hidden flex flex-col pt-32 px-6 shadow-2xl"
+              className="fixed top-0 left-0 w-[75%] h-full bg-zinc-950 z-[45] md:hidden flex flex-col pt-32 px-6 shadow-2xl"
             >
               <div className="flex flex-col gap-6">
                 {navLinks.map((link) => (

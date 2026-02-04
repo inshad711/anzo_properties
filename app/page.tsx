@@ -29,7 +29,10 @@ export default function Home() {
       {/* <Marquee3 /> */}
 
       {/* <Contact /> */}
-      <Contact2 />
+
+      <div className="pt-16 pb-12 md:pt-28 md:pb-16">
+        <Contact2 />
+      </div>
       {/* <div>
         <AboutSection />
       </div> */}

@@ -691,7 +691,7 @@ const WhyChooseSection: React.FC = () => {
   ];
 
   return (
-    <section className="bg-zinc-950 text-white py:12 m:py-20">
+    <section className="bg-zinc-950 text-white py-12 md:pb-20">
       <div className="templateContainer w-full grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start relative px-6 md:px-12">
         {/* Left Content Side - STICKY */}
         <motion.div
