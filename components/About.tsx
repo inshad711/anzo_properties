@@ -172,7 +172,7 @@ const AboutSection: React.FC = (): ReactElement => {
 
   return (
     // Changed: bg-white to bg-[#0a0a0a] (Deep Black)
-    <section className="w-full bg-[#0a0a0a] py-12 mt-18 md:py-20 overflow-hidden">
+    <section className="w-full bg-zinc-950 py-12 mt-18 md:py-20 overflow-hidden">
       <div className="templateContainer">
         <div className="flex flex-col lg:flex-row gap-12 items-stretch">
           {/* Left Column: Full Height Image Container */}
@@ -300,7 +300,7 @@ const AboutSection: React.FC = (): ReactElement => {
 
 export default function About(): ReactElement {
   return (
-    <div className="bg-[#000] flex items-center justify-center">
+    <div className="bg-zinc-950 flex items-center justify-center">
       <AboutSection />
     </div>
   );

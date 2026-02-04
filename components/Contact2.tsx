@@ -298,7 +298,7 @@ const ContactSection: React.FC = () => {
             </p>
           </div>
 
-          <div className="relative flex-1 rounded-[2rem] overflow-hidden shadow-2xl group border border-zinc-800 min-h-[350px]">
+          <div className="relative flex-1  rounded-[2rem] overflow-hidden shadow-2xl group border border-zinc-800 min-h-[350px]">
             <img
               src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=800"
               alt="Modern Architecture"
@@ -331,7 +331,7 @@ const ContactSection: React.FC = () => {
 
         {/* Right Side: Form Card */}
         <div className="w-full lg:w-1/2">
-          <div className="h-full bg-zinc-900 rounded-[2.5rem] shadow-2xl p-8 md:p-12 border border-zinc-800">
+          <div className="h-full bg-zinc-900 rounded-[2rem] md:rounded-[2.5rem] shadow-2xl p-6 md:p-12 border border-zinc-800">
             <form
               onSubmit={handleSubmit}
               className="flex flex-col h-full space-y-6"
@@ -363,7 +363,7 @@ const ContactSection: React.FC = () => {
                     placeholder="Your email Address"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-5 py-4 rounded-xl bg-zinc-800 border border-zinc-700 text-white focus:outline-none focus:ring-2 focus:ring-[#EFFF00] focus:border-transparent transition-all placeholder:text-zinc-500"
+                    className="w-full px-5 py-4 rounded-xl bg-zinc-800 border border-zinc-700 text-white focus:outline-none focus:ring-2 focus:ring-[#c5a67c] focus:border-transparent transition-all placeholder:text-zinc-500"
                   />
                 </div>
 
@@ -378,7 +378,7 @@ const ContactSection: React.FC = () => {
                     placeholder="Your number"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-5 py-4 rounded-xl bg-zinc-800 border border-zinc-700 text-white focus:outline-none focus:ring-2 focus:ring-[#EFFF00] focus:border-transparent transition-all placeholder:text-zinc-500"
+                    className="w-full px-5 py-4 rounded-xl bg-zinc-800 border border-zinc-700 text-white focus:outline-none focus:ring-2 focus:ring-[#c5a67c] focus:border-transparent transition-all placeholder:text-zinc-500"
                   />
                 </div>
 

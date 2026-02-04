@@ -531,7 +531,7 @@ export default function WeOffer() {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-black"
+      className="relative w-full overflow-hidden bg-zinc-950"
       style={{ clipPath: "inset(0 0 0 0)" }}
     >
       {/* FIXED BACKGROUND WITH MOBILE FIX */}
@@ -559,7 +559,7 @@ export default function WeOffer() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-28 space-y-6"
+          className="text-center mb-12 md:mb-20 space-y-6"
         >
           <div className="flex flex-col items-center gap-4">
             <div className="h-[1px] w-12 bg-[#c5a36b]/80" />

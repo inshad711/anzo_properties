@@ -464,7 +464,7 @@ export default function RealEstate() {
   }, [searchQuery]);
 
   return (
-    <div className="bg-black text-white pt-32 min-h-screen selection:bg-indigo-500/30">
+    <div className="bg-zinc-950 text-white pt-32 min-h-screen">
       <div className="max-w-6xl mx-auto px-4 pt-6">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
           <h1 className="text-3xl md:text-4xl font-normal max-w-xl mx-auto tracking-tight text-white text-center">

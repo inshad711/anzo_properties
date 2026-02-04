@@ -13,7 +13,7 @@ import WeOffer from "@/components/WeOffer";
 
 export default function Home() {
   return (
-    <div className="bg-black">
+    <div className="bg-zinc-950">
       <div>
         <HeroSection />
       </div>

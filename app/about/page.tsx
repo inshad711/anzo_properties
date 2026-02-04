@@ -3,7 +3,7 @@ import WhyChoose from "@/components/WhyChoose";
 
 export default function AboutPage() {
   return (
-    <div className="bg-black">
+    <div className="bg-zinc-950">
       <div>
         <About />
       </div>
