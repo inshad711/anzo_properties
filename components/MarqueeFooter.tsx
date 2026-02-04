@@ -272,7 +272,7 @@ export default function MarqueeFooter() {
   const displayItems = [...MARQUEE_ITEMS, ...MARQUEE_ITEMS, ...MARQUEE_ITEMS];
 
   return (
-    <div className="w-full bg-black py-14 overflow-hidden select-none">
+    <div className="w-full bg-black py-14 overflow-hidden">
       <div className="relative flex">
         {/* Added "marquee-container" class for hover control */}
         <div

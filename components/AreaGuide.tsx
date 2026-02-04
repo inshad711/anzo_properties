@@ -1094,7 +1094,7 @@ export default function AreaGuide() {
   const [isAnimating, setIsAnimating] = useState(false);
 
   return (
-    <section className="bg-zinc-950 py-8 md:py-12 px-4 md:px-10">
+    <section className="bg-zinc-950 pb-8 md:pb-12 px-4 md:px-10">
       <div className="max-w-[1400px] mx-auto">
         {/* Header */}
         <div className=" md:max-w-2xl mx-auto mb-10 px-4">

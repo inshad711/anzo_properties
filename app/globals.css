@@ -1,9 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: black;
+  /* --foreground: #171717; */
 }
+
+/* html {
+  background-color: #0a0a0a;
+}
+
+section {
+  margin-top: -1px;
+  padding-top: 1px;
+} */
 
 /* Tailwind theme variables */
 @theme inline {

@@ -80,6 +80,7 @@ const libertinus = Libertinus_Sans({
   subsets: ["latin"],
   weight: ["400", "700"],
   style: ["normal", "italic"],
+  fallback: [],
 });
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -101,7 +102,7 @@ export default function RootLayout({
           ${inter.variable}
               ${italiana.variable}
                ${libertinus.variable}
-          antialiased
+          
         `}
       >
         <Header />

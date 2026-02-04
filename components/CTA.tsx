@@ -507,7 +507,10 @@ export default function CTA() {
             </div>
           ))}
           <div className="pt-8">
-            <button className="px-8 py-2 cursor-pointer bg-transparent text-white font-medium rounded-sm shadow-lg border border-[#d6b56a] transition-all">
+            {/* <button className="px-8 py-2 cursor-pointer bg-transparent text-white font-medium rounded-sm shadow-lg border border-[#d6b56a] transition-all">
+              About Us
+            </button> */}
+            <button className="w-fit px-8 py-3 border border-[#c5a36b]/40 rounded-full text-[13px] uppercase tracking-widest font-semibold text-[#c5a36b] hover:bg-[#c5a36b] hover:text-black transition-all duration-500">
               About Us
             </button>
           </div>

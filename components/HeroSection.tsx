@@ -98,6 +98,7 @@
 // export default HeroSection;
 
 ////// hero new
+
 "use client";
 
 import React from "react";
@@ -110,7 +111,7 @@ const HeroSection: React.FC = () => {
         loop
         muted
         playsInline
-        poster="/hero-fallback.jpg"
+        // poster="/hero-fallback.jpg"
         className="absolute inset-0 w-full h-full object-cover z-0"
       >
         <source src="/video/VIDEO-FOR-ANXO-PROP.mp4" type="video/mp4" />

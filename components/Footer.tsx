@@ -20,7 +20,7 @@ const Footer = () => {
             <a
               key={link}
               href="#"
-              className="block text-[13px] font-medium tracking-widest hover:text-[#00bcd4] transition-colors"
+              className="block text-[13px] font-medium tracking-widest hover:text-[#8a6531] transition-colors"
             >
               {link}
             </a>
@@ -35,19 +35,19 @@ const Footer = () => {
           <div className="flex flex-col space-y-2 text-[13px] tracking-wide">
             <a
               href="mailto:info@test.gmail.com"
-              className="hover:text-[#00bcd4]"
+              className="hover:text-[#8a6531]"
             >
               info@anzoproperties.com
             </a>
             <a
               href="00971-55-1172789"
-              className="hover:text-[#00bcd4] text-gray-300"
+              className="hover:text-[#8a6531] text-gray-300"
             >
               00971-55-1172789
             </a>
             <a
               href="00971-58-5430953"
-              className="hover:text-[#00bcd4] text-gray-300"
+              className="hover:text-[#8a6531] text-gray-300"
             >
               00971-58-5430953
             </a>
@@ -69,15 +69,15 @@ const Footer = () => {
             <div className="flex space-x-5">
               <Facebook
                 size={18}
-                className="cursor-pointer hover:text-[#00bcd4]"
+                className="cursor-pointer hover:text-[#8a6531]"
               />
               <Instagram
                 size={18}
-                className="cursor-pointer hover:text-[#00bcd4]"
+                className="cursor-pointer hover:text-[#8a6531]"
               />
               <Linkedin
                 size={18}
-                className="cursor-pointer hover:text-[#00bcd4]"
+                className="cursor-pointer hover:text-[#8a6531]"
               />
             </div>
           </div>
@@ -89,7 +89,7 @@ const Footer = () => {
           <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent"></div> */}
 
           <img
-            src="https://www.uptown.ae/assets/footer-img-qOMPXiNy.webp"
+            src="/image/076aad00-ce50-4dd7-a2e1-6e089933482d.jpg"
             alt="Interior architectural view"
             className="w-full h-full object-cover rounded-sm  opacity-90"
           />
@@ -114,7 +114,7 @@ const Footer = () => {
       </div> */}
       <div
         className="border-t border-gray-900 
-  min-h-[80px]
+py-6
   flex flex-col md:flex-row 
   justify-center items-center 
   text-[10px] text-gray-600 
